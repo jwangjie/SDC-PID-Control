@@ -1,5 +1,5 @@
 # PID Control
---- 
+
 Two PID controllers for steering and throttle in C++ to maneuver the vehicle around the track in a simulator were developed. The input is the cross track error (CTE) measured in the simulator, the outputs are the steering and throttle commands. 
 
 ## P, I, D regulator
