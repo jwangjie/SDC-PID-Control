@@ -1,9 +1,9 @@
 # PID Control
 
-Two PID controllers for steering and throttle in C++ to maneuver the vehicle around the track in a simulator were developed. The input is the cross track error (CTE) measured in the simulator, the outputs are the steering and throttle commands. 
+Two PID controllers for steering and throttle in C++ to maneuver the vehicle around the track in a simulator were developed. The input is the cross-track error (CTE) measured in the simulator, the outputs are the steering and throttle commands. 
 
-## My simulation result:
-[![My simulation video](https://github.com/jwangjie/SDC-PID-Control/blob/master/PID.png)](https://youtu.be/UWmtsb8blMk)
+## The simulation result can be viewed by clicking on the GIF below.
+[![pid](PID.gif)](https://www.youtube.com/watch?v=1DOOKX389vY)
 
 ## P, I, D regulator
 
@@ -17,7 +17,7 @@ A detailed description of PID controller can be found [PID Controller.pdf](https
 
 The gains of the PID controller were determined by trial and error method. There are two general rules to guide the process:
 * Pick positive values for P, I, and D gains to make sure the system will remain stable 
-* Set the integral gain to zero and pick the P and D gains as if designing a PD controller. Then go back and pick sort of an I gain.
+* Set the integral gain to zero and pick the P and D gains as if designing a PD controller. Then go back and pick an I gain.
 
 The integral gain is relatively small compared to PD gains. For a simple task such as the throttle control, a PD controller is enough. 
 
